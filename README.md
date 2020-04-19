@@ -93,19 +93,19 @@ En el body de la request se colocan los campos que se desean actualizar:
   }
 ```
 
-- **POST /students/updateGrade** Actualizar a todos los estudiantes que cumplen con el criterio especificado
+- **POST /students/updateNote** Actualizar a todos los estudiantes que cumplen con el criterio especificado
 
 ```
 Parámetros
   **rule: string (required) podemos escoger el criterio entre  **[ MAX_NOTE | MIN_NOTE | EQUAL_TO ]**
-  **currentGrade: number (required)
-  **newGrade: number (required)
+  **currentNote: number (required)
+  **newNote: number (required)
 
     #  Request:
       {
         "rule": "EQUAL_TO",
-        "currentGrade": 5,
-        "newGrade": 4.3
+        "currentNote": 5,
+        "newNote": 4.3
       }
 
     # Response: 
