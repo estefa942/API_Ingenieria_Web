@@ -44,7 +44,7 @@ La siguiente es una API desarrollada para el curso de Ingeniería web de la UdeA
 - **POST /students** Crear un estudiante
 
 ```
-  ###Request Body:
+  # Request:
     {
       "name": "Estefany",
       "lastname": "Muriel",
@@ -52,7 +52,7 @@ La siguiente es una API desarrollada para el curso de Ingeniería web de la UdeA
       "note": 5
     }
 
-  ###Response:
+  # Response:
    {
      "_id": "5e9a899dffe96ba9c340298c",
      "name": "Estefany",
@@ -97,18 +97,18 @@ En el body de la request se colocan los campos que se desean actualizar:
 
 ```
 Parámetros
-  **rule: string (required)** podemos escoger el criterio entre  **[ MAX_NOTE | MIN_NOTE | EQUAL_TO ]**
-  **currentGrade: number (required)**
-  **newGrade: number (required)**
+  **rule: string (required) podemos escoger el criterio entre  **[ MAX_NOTE | MIN_NOTE | EQUAL_TO ]**
+  **currentGrade: number (required)
+  **newGrade: number (required)
 
-    ### Request:
+    #  Request:
       {
         "rule": "EQUAL_TO",
         "currentGrade": 5,
         "newGrade": 4.3
       }
 
-    ### Response: 
+    # Response: 
       {
         "message": "students updated correctly",
         "rule": "EQUAL_TO",
